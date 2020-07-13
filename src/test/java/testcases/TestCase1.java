@@ -54,13 +54,13 @@ public class TestCase1 {
 	@Test
 	public void doUserReg() {
 		test = extent.createTest("User Registration Test");
-		Assert.fail("User Registartion Test Failed");
+		//Assert.fail("User Registartion Test Failed");
 	}
 	
 	@Test
 	public void isSkip() {
 		test = extent.createTest("Skip Test");
-		throw new SkipException("Skipping the test case");
+		//throw new SkipException("Skipping the test case");
 	}
 	
 	@AfterMethod
