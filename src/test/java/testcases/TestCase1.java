@@ -22,6 +22,11 @@ public class TestCase1 {
 		htmlReporter.config().setTheme(Theme.STANDARD);
 		
 		extent = new ExtentReports();
+		extent.attachReporter(htmlReporter);
+		
+		extent.setSystemInfo("Test Automation Engineer", "Janielle Joy Gregorio");
+		extent.setSystemInfo("Organization", "Jan's Group of Testers");
+		extent.setSystemInfo("Build No.", "JJSG-amazing010692");
 	}
 
 }
