@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-13T09:37:44Z" name="Default suite" finished-at="2020-07-13T09:37:47Z" duration-ms="2950">
+  <suite started-at="2020-07-14T01:48:32Z" name="Default suite" finished-at="2020-07-14T01:48:34Z" duration-ms="1316">
     <groups>
     </groups>
-    <test started-at="2020-07-13T09:37:44Z" name="Default test" finished-at="2020-07-13T09:37:47Z" duration-ms="2950">
+    <test started-at="2020-07-14T01:48:32Z" name="Default test" finished-at="2020-07-14T01:48:34Z" duration-ms="1316">
       <class name="testcases.TestCase1">
-        <test-method is-config="true" signature="setReport()[pri:0, instance:testcases.TestCase1@74d1dc36]" started-at="2020-07-13T09:37:44Z" name="setReport" finished-at="2020-07-13T09:37:46Z" duration-ms="1314" status="PASS">
+        <test-method is-config="true" signature="setReport()[pri:0, instance:testcases.TestCase1@74d1dc36]" started-at="2020-07-14T01:48:32Z" name="setReport" finished-at="2020-07-14T01:48:33Z" duration-ms="389" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setReport -->
-        <test-method signature="doLogin()[pri:0, instance:testcases.TestCase1@74d1dc36]" started-at="2020-07-13T09:37:46Z" name="doLogin" finished-at="2020-07-13T09:37:46Z" duration-ms="32" status="PASS">
+        <test-method signature="doLogin()[pri:0, instance:testcases.TestCase1@74d1dc36]" started-at="2020-07-14T01:48:33Z" name="doLogin" finished-at="2020-07-14T01:48:33Z" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLogin -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.TestCase1@74d1dc36]" started-at="2020-07-13T09:37:46Z" name="tearDown" finished-at="2020-07-13T09:37:46Z" duration-ms="69" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.TestCase1@74d1dc36]" started-at="2020-07-14T01:48:33Z" name="tearDown" finished-at="2020-07-14T01:48:33Z" duration-ms="12" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,11 +26,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="doUserReg()[pri:0, instance:testcases.TestCase1@74d1dc36]" started-at="2020-07-13T09:37:46Z" name="doUserReg" finished-at="2020-07-13T09:37:46Z" duration-ms="3" status="PASS">
+        <test-method signature="doUserReg()[pri:0, instance:testcases.TestCase1@74d1dc36]" started-at="2020-07-14T01:48:33Z" name="doUserReg" finished-at="2020-07-14T01:48:33Z" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doUserReg -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.TestCase1@74d1dc36]" started-at="2020-07-13T09:37:46Z" name="tearDown" finished-at="2020-07-13T09:37:46Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.TestCase1@74d1dc36]" started-at="2020-07-14T01:48:33Z" name="tearDown" finished-at="2020-07-14T01:48:33Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,11 +41,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="isSkip()[pri:0, instance:testcases.TestCase1@74d1dc36]" started-at="2020-07-13T09:37:46Z" name="isSkip" finished-at="2020-07-13T09:37:46Z" duration-ms="2" status="PASS">
+        <test-method signature="isSkip()[pri:0, instance:testcases.TestCase1@74d1dc36]" started-at="2020-07-14T01:48:33Z" name="isSkip" finished-at="2020-07-14T01:48:33Z" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isSkip -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.TestCase1@74d1dc36]" started-at="2020-07-13T09:37:46Z" name="tearDown" finished-at="2020-07-13T09:37:46Z" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.TestCase1@74d1dc36]" started-at="2020-07-14T01:48:33Z" name="tearDown" finished-at="2020-07-14T01:48:33Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -56,7 +56,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:testcases.TestCase1@74d1dc36]" started-at="2020-07-13T09:37:46Z" name="endReport" finished-at="2020-07-13T09:37:47Z" duration-ms="1459" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:testcases.TestCase1@74d1dc36]" started-at="2020-07-14T01:48:33Z" name="endReport" finished-at="2020-07-14T01:48:34Z" duration-ms="852" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
