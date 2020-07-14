@@ -2,31 +2,16 @@
 <testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-14T05:43:21Z" name="Default suite" finished-at="2020-07-14T05:43:22Z" duration-ms="1297">
+  <suite started-at="2020-07-14T17:09:49Z" name="Suite" finished-at="2020-07-14T17:09:49Z" duration-ms="132">
     <groups>
     </groups>
-    <test started-at="2020-07-14T05:43:21Z" name="Default test" finished-at="2020-07-14T05:43:22Z" duration-ms="1297">
-      <class name="testcases.TestCase1">
-        <test-method is-config="true" signature="setReport()[pri:0, instance:testcases.TestCase1@53045c6c]" started-at="2020-07-14T05:43:21Z" name="setReport" finished-at="2020-07-14T05:43:21Z" duration-ms="306" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setReport -->
-        <test-method signature="doLogin()[pri:0, instance:testcases.TestCase1@53045c6c]" started-at="2020-07-14T05:43:21Z" name="doLogin" finished-at="2020-07-14T05:43:21Z" duration-ms="14" status="PASS">
+    <test started-at="2020-07-14T17:09:49Z" name="Test" finished-at="2020-07-14T17:09:49Z" duration-ms="132">
+      <class name="testcases.TestCase2">
+        <test-method signature="doLogin()[pri:0, instance:testcases.TestCase2@3116c353]" started-at="2020-07-14T17:09:49Z" name="doLogin" finished-at="2020-07-14T17:09:49Z" duration-ms="31" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLogin -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.TestCase1@53045c6c]" started-at="2020-07-14T05:43:21Z" name="tearDown" finished-at="2020-07-14T05:43:21Z" duration-ms="19" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=doLogin status=SUCCESS method=TestCase1.doLogin()[pri:0, instance:testcases.TestCase1@53045c6c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="doUserReg()[pri:0, instance:testcases.TestCase1@53045c6c]" started-at="2020-07-14T05:43:21Z" name="doUserReg" finished-at="2020-07-14T05:43:21Z" duration-ms="5" status="FAIL">
+        <test-method signature="doUserReg()[pri:0, instance:testcases.TestCase2@3116c353]" started-at="2020-07-14T17:09:49Z" name="doUserReg" finished-at="2020-07-14T17:09:49Z" duration-ms="4" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[User Registration Test Failed]]>
@@ -34,7 +19,7 @@
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: User Registration Test Failed
 at org.testng.Assert.fail(Assert.java:96)
-at testcases.TestCase1.doUserReg(TestCase1.java:60)
+at testcases.TestCase2.doUserReg(TestCase2.java:16)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -66,25 +51,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doUserReg -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.TestCase1@53045c6c]" started-at="2020-07-14T05:43:21Z" name="tearDown" finished-at="2020-07-14T05:43:21Z" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=doUserReg status=FAILURE method=TestCase1.doUserReg()[pri:0, instance:testcases.TestCase1@53045c6c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="isSkip()[pri:0, instance:testcases.TestCase1@53045c6c]" started-at="2020-07-14T05:43:21Z" name="isSkip" finished-at="2020-07-14T05:43:21Z" duration-ms="1" status="SKIP">
+        <test-method signature="isSkip()[pri:0, instance:testcases.TestCase2@3116c353]" started-at="2020-07-14T17:09:49Z" name="isSkip" finished-at="2020-07-14T17:09:49Z" duration-ms="3" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test case]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Skipping the test case
-at testcases.TestCase1.isSkip(TestCase1.java:66)
+at testcases.TestCase2.isSkip(TestCase2.java:21)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -116,22 +90,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isSkip -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.TestCase1@53045c6c]" started-at="2020-07-14T05:43:21Z" name="tearDown" finished-at="2020-07-14T05:43:21Z" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=isSkip status=SKIP method=TestCase1.isSkip()[pri:0, instance:testcases.TestCase1@53045c6c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:testcases.TestCase1@53045c6c]" started-at="2020-07-14T05:43:21Z" name="endReport" finished-at="2020-07-14T05:43:22Z" duration-ms="898" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-      </class> <!-- testcases.TestCase1 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- testcases.TestCase2 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
