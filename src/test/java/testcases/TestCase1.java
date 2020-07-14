@@ -1,6 +1,7 @@
 package testcases;
 
 import org.testng.ITestResult;
+import org.testng.SkipException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -58,7 +59,7 @@ public class TestCase1 {
 	@Test
 	public void isSkip() {
 		test = extent.createTest("Skip Test");
-		//throw new SkipException("Skipping the test case");
+		throw new SkipException("Skipping the test case");
 	}
 	
 	@AfterMethod
@@ -69,7 +70,7 @@ public class TestCase1 {
 			String methodName = result.getMethod().getMethodName();
 			String logText = "<b>" + "TEST CASE: - " + methodName.toUpperCase() + "  SKIPPED" + "</b>";
 			Markup m = MarkupHelper.createLabel(logText, ExtentColor.YELLOW);
-			test.pass(m);
+			test.skip(m);
 			
 		} else if(result.getStatus() == ITestResult.SUCCESS) {
 			String methodName = result.getMethod().getMethodName();
