@@ -52,19 +52,20 @@ public class ExtentListeners implements ITestListener {
 	
 		
 		
-		String excepionMessage=Arrays.toString(result.getThrowable().getStackTrace());
-		testReport.get().fail("<details>" + "<summary>" + "<b>" + "<font color=" + "red>" + "Exception Occured:Click to see"
-				+ "</font>" + "</b >" + "</summary>" +excepionMessage.replaceAll(",", "<br>")+"</details>"+" \n");
+		String exceptionMessage = Arrays.toString(result.getThrowable().getStackTrace());
+		testReport.get().fail("<details>" + "<summary>" + "<b>" + "<font color=" + "red>" + "Exception Occured: Click to see"
+				+ "</font>" + "</b >" + "</summary>" + exceptionMessage.replaceAll(",", "<br>")+"</details>"+" \n");
 		
-	/*	try {
-
-			ExtentManager.captureScreenshot();
-			testReport.get().fail("<b>" + "<font color=" + "red>" + "Screenshot of failure" + "</font>" + "</b>",
-					MediaEntityBuilder.createScreenCaptureFromPath(ExtentManager.screenshotName)
-							.build());
-		} catch (IOException e) {
-
-		}*/
+		/*//Capture screenshot in case of a failure. Applicable for Selenium.
+		 * try {
+		 * 
+		 * ExtentManager.captureScreenshot(); testReport.get().fail("<b>" +
+		 * "<font color=" + "red>" + "Screenshot of failure" + "</font>" + "</b>",
+		 * MediaEntityBuilder.createScreenCaptureFromPath(ExtentManager.screenshotName)
+		 * .build()); } catch (IOException e) {
+		 * 
+		 * }
+		 */
 		
 		String failureLogg="TEST CASE FAILED";
 		Markup m = MarkupHelper.createLabel(failureLogg, ExtentColor.RED);
@@ -73,9 +74,9 @@ public class ExtentListeners implements ITestListener {
 	}
 
 	public void onTestSkipped(ITestResult result) {
-		String methodName=result.getMethod().getMethodName();
-		String logText="<b>"+"Test Case:- "+ methodName+ " Skipped"+"</b>";		
-		Markup m=MarkupHelper.createLabel(logText, ExtentColor.YELLOW);
+		String methodName = result.getMethod().getMethodName();
+		String logText = "<b>"+"Test Case:- "+ methodName+ " Skipped"+"</b>";		
+		Markup m = MarkupHelper.createLabel(logText, ExtentColor.ORANGE);
 		testReport.get().skip(m);
 
 	}
