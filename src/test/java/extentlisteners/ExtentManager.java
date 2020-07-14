@@ -12,7 +12,7 @@ public class ExtentManager {
 		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(fileName);
 
 		htmlReporter.config().setTheme(Theme.DARK);
-		htmlReporter.config().setDocumentTitle(fileName);
+		htmlReporter.config().setDocumentTitle("JJSG'S Test Automation Reports");
 		htmlReporter.config().setEncoding("utf-8");
 		htmlReporter.config().setReportName(fileName);
 
