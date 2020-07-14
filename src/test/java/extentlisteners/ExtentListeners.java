@@ -49,12 +49,10 @@ public class ExtentListeners implements ITestListener {
 
 	public void onTestFailure(ITestResult result) {
 
-	
-		
-		
 		String exceptionMessage = Arrays.toString(result.getThrowable().getStackTrace());
 		testReport.get().fail("<details>" + "<summary>" + "<b>" + "<font color=" + "red>" + "Exception Occured: Click to see"
-				+ "</font>" + "</b >" + "</summary>" + exceptionMessage.replaceAll(",", "<br>")+"</details>"+" \n");
+				+ "</font>" + "</b >" + "</summary>" + exceptionMessage.replaceAll(",", "<br>") + "</details>"
+				+ " \n");
 		
 		/*//Capture screenshot in case of a failure. Applicable for Selenium.
 		 * try {
@@ -67,8 +65,9 @@ public class ExtentListeners implements ITestListener {
 		 * }
 		 */
 		
-		String failureLogg="TEST CASE FAILED";
-		Markup m = MarkupHelper.createLabel(failureLogg, ExtentColor.RED);
+		String methodName = result.getMethod().getMethodName();
+		String logText = "<b>" + "TEST CASE: - " + methodName.toUpperCase() + "  FAILED" + "</b>";
+		Markup m = MarkupHelper.createLabel(logText, ExtentColor.RED);
 		testReport.get().log(Status.FAIL, m);
 
 	}
