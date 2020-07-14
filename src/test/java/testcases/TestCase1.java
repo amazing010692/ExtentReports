@@ -66,6 +66,10 @@ public class TestCase1 {
 		if(result.getStatus() == ITestResult.FAILURE) {
 			
 		} else if(result.getStatus() == ITestResult.SKIP) {
+			String methodName = result.getMethod().getMethodName();
+			String logText = "<b>" + "TEST CASE: - " + methodName.toUpperCase() + "  SKIPPED" + "</b>";
+			Markup m = MarkupHelper.createLabel(logText, ExtentColor.YELLOW);
+			test.pass(m);
 			
 		} else if(result.getStatus() == ITestResult.SUCCESS) {
 			String methodName = result.getMethod().getMethodName();
