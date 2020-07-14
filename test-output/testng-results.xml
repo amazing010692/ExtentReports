@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="3" passed="2" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-14T05:16:56Z" name="Default suite" finished-at="2020-07-14T05:17:00Z" duration-ms="3778">
+  <suite started-at="2020-07-14T05:33:53Z" name="Default suite" finished-at="2020-07-14T05:33:54Z" duration-ms="1436">
     <groups>
     </groups>
-    <test started-at="2020-07-14T05:16:56Z" name="Default test" finished-at="2020-07-14T05:17:00Z" duration-ms="3778">
+    <test started-at="2020-07-14T05:33:53Z" name="Default test" finished-at="2020-07-14T05:33:54Z" duration-ms="1436">
       <class name="testcases.TestCase1">
-        <test-method is-config="true" signature="setReport()[pri:0, instance:testcases.TestCase1@74e28667]" started-at="2020-07-14T05:16:56Z" name="setReport" finished-at="2020-07-14T05:16:57Z" duration-ms="770" status="PASS">
+        <test-method is-config="true" signature="setReport()[pri:0, instance:testcases.TestCase1@74e28667]" started-at="2020-07-14T05:33:53Z" name="setReport" finished-at="2020-07-14T05:33:53Z" duration-ms="299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setReport -->
-        <test-method signature="doLogin()[pri:0, instance:testcases.TestCase1@74e28667]" started-at="2020-07-14T05:16:57Z" name="doLogin" finished-at="2020-07-14T05:16:57Z" duration-ms="26" status="PASS">
+        <test-method signature="doLogin()[pri:0, instance:testcases.TestCase1@74e28667]" started-at="2020-07-14T05:33:53Z" name="doLogin" finished-at="2020-07-14T05:33:53Z" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLogin -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.TestCase1@74e28667]" started-at="2020-07-14T05:16:57Z" name="tearDown" finished-at="2020-07-14T05:16:57Z" duration-ms="118" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.TestCase1@74e28667]" started-at="2020-07-14T05:33:53Z" name="tearDown" finished-at="2020-07-14T05:33:53Z" duration-ms="27" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,11 +26,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="doUserReg()[pri:0, instance:testcases.TestCase1@74e28667]" started-at="2020-07-14T05:16:57Z" name="doUserReg" finished-at="2020-07-14T05:16:57Z" duration-ms="4" status="PASS">
+        <test-method signature="doUserReg()[pri:0, instance:testcases.TestCase1@74e28667]" started-at="2020-07-14T05:33:53Z" name="doUserReg" finished-at="2020-07-14T05:33:53Z" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doUserReg -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.TestCase1@74e28667]" started-at="2020-07-14T05:16:57Z" name="tearDown" finished-at="2020-07-14T05:16:57Z" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.TestCase1@74e28667]" started-at="2020-07-14T05:33:53Z" name="tearDown" finished-at="2020-07-14T05:33:53Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,14 +41,14 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="isSkip()[pri:0, instance:testcases.TestCase1@74e28667]" started-at="2020-07-14T05:16:57Z" name="isSkip" finished-at="2020-07-14T05:16:57Z" duration-ms="10" status="SKIP">
+        <test-method signature="isSkip()[pri:0, instance:testcases.TestCase1@74e28667]" started-at="2020-07-14T05:33:53Z" name="isSkip" finished-at="2020-07-14T05:33:53Z" duration-ms="2" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test case]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Skipping the test case
-at testcases.TestCase1.isSkip(TestCase1.java:62)
+at testcases.TestCase1.isSkip(TestCase1.java:65)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -80,7 +80,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isSkip -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.TestCase1@74e28667]" started-at="2020-07-14T05:16:57Z" name="tearDown" finished-at="2020-07-14T05:16:57Z" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.TestCase1@74e28667]" started-at="2020-07-14T05:33:53Z" name="tearDown" finished-at="2020-07-14T05:33:53Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -91,7 +91,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:testcases.TestCase1@74e28667]" started-at="2020-07-14T05:16:57Z" name="endReport" finished-at="2020-07-14T05:17:00Z" duration-ms="2783" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:testcases.TestCase1@74e28667]" started-at="2020-07-14T05:33:53Z" name="endReport" finished-at="2020-07-14T05:33:54Z" duration-ms="1047" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

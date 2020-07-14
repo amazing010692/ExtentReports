@@ -2,6 +2,7 @@ package testcases;
 
 import java.util.Arrays;
 
+import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.SkipException;
 import org.testng.annotations.AfterMethod;
@@ -56,7 +57,7 @@ public class TestCase1 {
 	@Test
 	public void doUserReg() {
 		test = extent.createTest("User Registration Test");
-		// Assert.fail("User Registration Test Failed");
+		Assert.fail("User Registration Test Failed");
 	}
 
 	@Test
