@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-14T17:09:49Z" name="Suite" finished-at="2020-07-14T17:09:49Z" duration-ms="132">
+  <suite started-at="2020-07-14T17:22:36Z" name="Suite" finished-at="2020-07-14T17:22:36Z" duration-ms="116">
     <groups>
     </groups>
-    <test started-at="2020-07-14T17:09:49Z" name="Test" finished-at="2020-07-14T17:09:49Z" duration-ms="132">
+    <test started-at="2020-07-14T17:22:36Z" name="Test" finished-at="2020-07-14T17:22:36Z" duration-ms="116">
       <class name="testcases.TestCase2">
-        <test-method signature="doLogin()[pri:0, instance:testcases.TestCase2@3116c353]" started-at="2020-07-14T17:09:49Z" name="doLogin" finished-at="2020-07-14T17:09:49Z" duration-ms="31" status="PASS">
+        <test-method signature="doLogin()[pri:0, instance:testcases.TestCase2@3116c353]" started-at="2020-07-14T17:22:36Z" name="doLogin" finished-at="2020-07-14T17:22:36Z" duration-ms="34" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLogin -->
-        <test-method signature="doUserReg()[pri:0, instance:testcases.TestCase2@3116c353]" started-at="2020-07-14T17:09:49Z" name="doUserReg" finished-at="2020-07-14T17:09:49Z" duration-ms="4" status="FAIL">
+        <test-method signature="doUserReg()[pri:0, instance:testcases.TestCase2@3116c353]" started-at="2020-07-14T17:22:36Z" name="doUserReg" finished-at="2020-07-14T17:22:36Z" duration-ms="3" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[User Registration Test Failed]]>
@@ -51,7 +51,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doUserReg -->
-        <test-method signature="isSkip()[pri:0, instance:testcases.TestCase2@3116c353]" started-at="2020-07-14T17:09:49Z" name="isSkip" finished-at="2020-07-14T17:09:49Z" duration-ms="3" status="SKIP">
+        <test-method signature="isSkip()[pri:0, instance:testcases.TestCase2@3116c353]" started-at="2020-07-14T17:22:36Z" name="isSkip" finished-at="2020-07-14T17:22:36Z" duration-ms="3" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test case]]>
