@@ -70,7 +70,7 @@ public class TestCase1 {
 	public void tearDown(ITestResult result) {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			String exceptionMessage = Arrays.toString(result.getThrowable().getStackTrace());
-			test.fail("<details>" + "<summary>" + "<b>" + "<font color=" + "red>" + "Exception Occured:Click to see"
+			test.fail("<details>" + "<summary>" + "<b>" + "<font color=" + "red>" + "Exception Occured: Click to see"
 					+ "</font>" + "</b >" + "</summary>" + exceptionMessage.replaceAll(",", "<br>") + "</details>"
 					+ " \n");
 
@@ -85,14 +85,15 @@ public class TestCase1 {
 			 * }
 			 */
 
-			String failureLogg = "TEST CASE FAILED";
-			Markup m = MarkupHelper.createLabel(failureLogg, ExtentColor.RED);
+			String methodName = result.getMethod().getMethodName();
+			String logText = "<b>" + "TEST CASE: - " + methodName.toUpperCase() + "  FAILED" + "</b>";
+			Markup m = MarkupHelper.createLabel(logText, ExtentColor.RED);
 			test.log(Status.FAIL, m);
 
 		} else if (result.getStatus() == ITestResult.SKIP) {
 			String methodName = result.getMethod().getMethodName();
 			String logText = "<b>" + "TEST CASE: - " + methodName.toUpperCase() + "  SKIPPED" + "</b>";
-			Markup m = MarkupHelper.createLabel(logText, ExtentColor.YELLOW);
+			Markup m = MarkupHelper.createLabel(logText, ExtentColor.ORANGE);
 			test.skip(m);
 
 		} else if (result.getStatus() == ITestResult.SUCCESS) {

@@ -8,6 +8,7 @@
           <include name="isSkip"/>
           <include name="setReport"/>
           <include name="tearDown"/>
+          <include name="doUserReg"/>
           <include name="endReport"/>
         </methods>
       </class> <!-- testcases.TestCase1 -->
