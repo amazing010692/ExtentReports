@@ -18,9 +18,9 @@ public class ExtentManager {
 
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
-		extent.setSystemInfo("Automation Tester", "Rahul Arora");
-		extent.setSystemInfo("Organization", "Way2Automation");
-		extent.setSystemInfo("Build no", "W2A-1234");
+		extent.setSystemInfo("Test Automation Engineer", "Janielle Joy Gregorio");
+		extent.setSystemInfo("Organization", "Jan's Group of Testers");
+		extent.setSystemInfo("Build no", "JJSG-amazing010692");
 
 		return extent;
 	}
